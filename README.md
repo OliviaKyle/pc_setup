@@ -7,9 +7,14 @@ These are some scripts to help set up a pc from a fresh install
 Run the `ubuntu.sh` script.
 
 ```
+# install wget to fetch the script
 sudo apt-get install wget
 
+# download the script
 wget https://raw.githubusercontent.com/OliviaKyle/pc_setup/master/ubuntu.sh
+
+# run the script
+source ubuntu.sh
 ```
 
 ## Other things
