@@ -17,6 +17,8 @@ wget https://raw.githubusercontent.com/OliviaKyle/pc_setup/master/ubuntu.sh
 source ubuntu.sh
 ```
 
+Or you could just copy paste it from the file.
+
 ## Other things
 
 ### SSH keys
