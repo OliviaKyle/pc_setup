@@ -2,6 +2,16 @@
 
 These are some scripts to help set up a pc from a fresh install
 
+## Ubuntu
+
+Run the `ubuntu.sh` script.
+
+```
+sudo apt-get install wget
+
+wget https://raw.githubusercontent.com/OliviaKyle/pc_setup/master/ubuntu.sh
+```
+
 ## Other things
 
 ### SSH keys
