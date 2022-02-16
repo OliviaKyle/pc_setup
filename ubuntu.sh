@@ -38,3 +38,26 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+
+# flameshot
+sudo apt-get install -y flameshot
+
+# xbindkeys
+sudo apt-get install -y xbindkeys
+
+# set up dotfiles
+find "$(pwd)/dotfiles" -type f -exec ln -s {} ~ \;
+
+# Razer drivers
+sudo gpasswd -a $USER plugdev
+sudo apt install -y software-properties-gtk
+sudo add-apt-repository ppa:openrazer/stable
+sudo apt update
+sudo apt install -y openrazer-meta
+
+# and the razer gui
+sudo add-apt-repository ppa:polychromatic/stable
+sudo apt update
+
+sudo apt install -y polychromatic
